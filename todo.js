@@ -1,4 +1,4 @@
-      let addToDoButton = document.getElementById('addToDo');//button element allows the user to click on the add button, which adds their tasks to the list
+ let addToDoButton = document.getElementById('addToDo');//button element allows the user to click on the add button, which adds their tasks to the list
       let toDoContainer = document.getElementById('toDoContainer');////the container where the to-do tasks will be displayed and shown
       let inputField = document.getElementById('inputField');//the input field where the user types into to add their tasks
       addToDoButton.addEventListener('click', function() {//event listener prompts the button when it is clicked
