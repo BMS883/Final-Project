@@ -1,152 +1,31 @@
-*{
-    color: white;
-    font-family: "Big Shoulders", sans-serif;
-    transition: 0.2s ease-in-out;
-    user-select: none;
-}
-
-.align{/*aligns box*/ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-body{/*the main portion of the looks, background*/
-    background-color: #252A34;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    text-align: center;
-    padding-top: 5vh;
-}
-
-.turn-container{/*container that shows who's turn it is*/
-    width: 170px;
-    height: 80px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    position: relative;
-}
-
-.turn-container h3{/*heading for the trun container*/
-    margin: 0;
-    grid-column-start: 1;
-    grid-column-end: 3;
-   font-family: "Big Shoulders", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.turn-container .turn-box{/*the actual boxes for the turn container and the turns*/
-    border: 3px solid #000;
-    font-size: 1.6rem;
-    font-weight: 700;
-   font-family: "Big Shoulders", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.turn-container .turn-box:nth-child(even){
-    border-right: none;
-}
-
-.bg{/*background for the turn box*/
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 85px;
-    height: 40px;
-    background-color: #e5383b;
-    z-index: -1;
-}
-
-.main-grid{/*tic tac toe grid*/
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    height: 250px;
-    width: 250px;
-    margin: 30px auto;
-    border: 2px solid #000;
-}
-
-.box{/*individula boxes*/
-    cursor: pointer;
-    font-size: 2rem;
-    font-weight: 700;
-    border: 2px solid #000;
-}
-
-.box:hover{/*adds a little somthing something when you hover on the box*/
-    background-color: #e5383b;
-}
-
-#play-again{/*styling for the play again button*/
-    background-color: #e5383b;
-    padding: 10px 25px;
-    border: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-   font-family: "Big Shoulders", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  
-}
-
-#play-again:hover{/*hover for play again button*/
-    padding: 10px 40px;
-    background-color: #08D9D6;
-    color: #000;
-  font-family: "Tektur", sans-serif;
-  
-}
-
-.scoreboard{
-  font-size: 1.2rem;
-  background-color: grey;
-  background-image: linear-gradient(to right,#e5383b 0%, #08D9D6 100%);
-  border: 10px;
-  border-radius: 20px;
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid white;
-  margin-bottom: 2rem; 
-  display: block;
-  
-}
-
-#score-X{
-  font-family: "Tektur", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100
-}
-
-#score-O{
-  font-family: "Tektur", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-#score-Draw{
-  font-family: "Tektur", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
+      body{
+        font-family: Trebuchet MS;
+        background-color: #9a8c98;
+        color: #4a4e69;
+        flex-direction: column;
+        display: flex;
+      }
+      h1{
+        color: #22223b; 
+        background-color: #c9ada7;
+        padding: 3rem;
+        border-weight: 5px;
+        border: solid black 5px;
+        margin-top: 0.5rem; 
+        text-align: center;
+      }
+      .title{
+        text-align: Left;
+      }
+      .about{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border:  solid black 2px;
+        border-radius: 10px;
+        background-color: #f2e9e4;
+        
+      }
