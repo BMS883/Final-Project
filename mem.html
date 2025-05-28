@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="difficulty">
+      <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+        <option value="4">Easy (4 pairs)</option>
+        <option value="6">Medium (6 pairs)</option>
+        <option value="8">Hard (8 pairs)</option>
+    </select>
+       <button onclick="startGame()">Start/Reset</button>
+
+    <div class="meta">
+      <div>Moves: <span class="moves"></span></div>
+      <div>Time: <span class="timer"></span></div>
+    </div>
+  
+    <div class="game">
+      <div class="card" data-tech="mickey">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj6ZGwzORWD0Qt_g4GU18rABdqb5XcF2U65QBG1JA6zgQDwpNrXwDAlC1lBfQGgzcuEFQ&usqp=CAU" alt="mickey" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="mickey">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj6ZGwzORWD0Qt_g4GU18rABdqb5XcF2U65QBG1JA6zgQDwpNrXwDAlC1lBfQGgzcuEFQ&usqp=CAU" alt="mickey" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="homer">
+        <img src="https://decostickerstore.b-cdn.net/wp-content/uploads/2024/12/autocollants-homer-simpson-mangeant-des-beignets.png?width=600" alt="homer" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+       <div class="card" data-tech="homer">
+        <img src="https://decostickerstore.b-cdn.net/wp-content/uploads/2024/12/autocollants-homer-simpson-mangeant-des-beignets.png?width=600" alt="homer" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="scoobydoo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCOlNd6t10DXXAowM9dsGIbdzRe-wgnq8-bdmu_Jer6HrlB3eGmjFRDRROK0BjQodrnDI&usqp=CAU" alt="scoobydoo" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="scoobydoo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCOlNd6t10DXXAowM9dsGIbdzRe-wgnq8-bdmu_Jer6HrlB3eGmjFRDRROK0BjQodrnDI&usqp=CAU" alt="scoobydoo" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="sofia">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8X6iu7CLt6qLLMN0HUHQMfrp7Qs7-RVTnFQdlQLuj2o3zI8FlvcNCtYW9w5DddMHqZc&usqp=CAU" alt="sofia" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="pikachu">
+        <img src="https://cdn-acop.makeronline.com/asop/2024-09/20/png/172678486333990600-66eca55f52fc.png" alt="pikachu" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="sofia">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8X6iu7CLt6qLLMN0HUHQMfrp7Qs7-RVTnFQdlQLuj2o3zI8FlvcNCtYW9w5DddMHqZc&usqp=CAU" alt="sofia" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="pikachu">
+        <img src="https://cdn-acop.makeronline.com/asop/2024-09/20/png/172678486333990600-66eca55f52fc.png" alt="pikachu" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+
+      <div class="card" data-tech="bugsbunny">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Bugs_Bunny.svg/640px-Bugs_Bunny.svg.png" alt="bugsbunny" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="bugsbunny">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Bugs_Bunny.svg/640px-Bugs_Bunny.svg.png" alt="bugsbunny" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="starfire">
+        <img src="https://assets.mycast.io/actor_images/actor-starfire-teen-titans-go-251765_small.jpg?1628188198" alt="starfire" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="starfire">
+        <img src="https://assets.mycast.io/actor_images/actor-starfire-teen-titans-go-251765_small.jpg?1628188198" alt="starfire" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="snoopy">
+        <img src="https://static.wixstatic.com/media/449abe_7b15686b2118476da4a733a7861dd772~mv2.jpg/v1/fill/w_764,h_764,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/sn-color.jpg" alt="snoopy" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+      <div class="card" data-tech="snoopy">
+        <img src="https://static.wixstatic.com/media/449abe_7b15686b2118476da4a733a7861dd772~mv2.jpg/v1/fill/w_764,h_764,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/sn-color.jpg" alt="snoopy" class="front" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aRuSzlvOOs2euRtgOqiJUt74ZdCRxdoOXA&s" alt="Memory card" class="back" />
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
