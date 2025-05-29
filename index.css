@@ -31,7 +31,7 @@
 .pOne{
   font-family: Trebuchet MS;
       text-align: center;
-  width: 300px;
+  width: 200px;
   height: 500px;
   padding: 50px;
   border: 2px solid black;
@@ -45,7 +45,7 @@
 .pTwo{
   font-family: Trebuchet MS;
       text-align: center;
-  width: 300px;
+  width: 200px;
   height: 500px;
   padding: 50px;
   border: 2px solid black;
@@ -73,7 +73,7 @@
 .pFour{  
   font-family: Trebuchet MS;
       text-align: center;
-  width: 300px;
+  width: 200px;
   height: 500px;
   padding: 50px;
   border: 2px solid black;
@@ -90,4 +90,7 @@ a{
 a:hover{
       text-decoration: underline;
       color: #22223B;
+}
+a:visited{
+      color:#4A4E69;
 }
