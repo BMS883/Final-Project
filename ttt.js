@@ -63,7 +63,7 @@ function checkWin(){
             }
 
             for(j = 0; j<3; j++){//changes the bacground color on win
-                boxes[winConditions[i][j]].style.backgroundColor = "#3c6e71"
+                boxes[winConditions[i][j]].style.backgroundColor = "#4A4E69"
                 boxes[winConditions[i][j]].style.color = "#000"
             }
         }
