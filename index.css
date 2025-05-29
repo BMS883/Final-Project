@@ -36,10 +36,10 @@
   padding: 50px;
   border: 2px solid black;
   margin: 2px;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #F2E9E4;
   float: left;
-  width: 50%;
+  width: 40%;
   padding: 10px;
 }
 .pTwo{
@@ -50,10 +50,10 @@
   padding: 50px;
   border: 2px solid black;
   margin: 2px;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #F2E9E4;
   float: right;
-  width: 50%;
+  width: 40%;
   padding: 10px;
 }
 .pThree{
@@ -64,10 +64,10 @@
   padding: 50px;
   border: 2px solid black;
   margin: 2px;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #F2E9E4;
   float: left;
-  width: 50%;
+  width: 40%;
   padding: 10px;
 }
 .pFour{  
@@ -78,10 +78,10 @@
   padding: 50px;
   border: 2px solid black;
   margin: 2px;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #F2E9E4;
   float: right;
-  width: 50%;
+  width: 40%;
   padding: 10px;
 }
 a{
