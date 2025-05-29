@@ -1,5 +1,3 @@
-
-
 const cards = document.querySelectorAll(".card");
 const counter = document.querySelector(".moves");
 const timer = document.querySelector(".timer");
@@ -13,7 +11,7 @@ let pairs = 0,
     seconds = 0,
     minutes = 0,
     interval;
-let currentDifficulty = "easy"; // Default difficulty
+let currentDifficulty = "easy";
 
 function flipCard() {
     if (lockBoard) return;
@@ -138,12 +136,11 @@ function setupGame(difficulty) {
     const allCards = Array.from(document.querySelectorAll(".card"));
     const selectedCards = allCards.slice(0, cardCount);
 
-    // Hide all cards, then show the selected ones
     cards.forEach(card => card.style.display = 'none');
     selectedCards.forEach(card => {
-        card.style.display = ''; // Show selected card
-        card.classList.remove("flip"); // Reset card flip state
-        card.addEventListener("click", flipCard); // Re-add event listeners
+        card.style.display = ''; 
+        card.classList.remove("flip");
+        card.addEventListener("click", flipCard); 
 
     });
 
@@ -156,11 +153,9 @@ difficultyBtns.forEach((btn) => {
     });
 });
 
-// Initial setup for easy difficulty
 setupGame("easy");
 
-// Reset Button
 const resetButton = document.getElementById("resetButton");
 resetButton.addEventListener("click", () => {
-    setupGame(currentDifficulty); // Reset with current difficulty
+    setupGame(currentDifficulty);
 });
