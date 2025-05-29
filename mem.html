@@ -4,28 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Memory Match Game for CompSci</title>
-     <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="game-container">
-    <h1>Memory Match Game</h1> 
-    <div class="difficulty"> <!--difficulty selections, to make it challenging for players.--> 
+    <h1>Memory Match Game</h1>
+    <div class="difficulty">
       <button class="difficulty-btn" data-difficulty="easy">Easy</button>
       <button class="difficulty-btn" data-difficulty="medium">Medium</button>
       <button class="difficulty-btn" data-difficulty="hard">Hard</button>
     </div>
-    <div class="board" id="gameBoard"></div> <!--Reset Button, so the player is capable to restarting over--> 
+    <div class="board" id="gameBoard"></div>
     <button id="resetButton">Reset Game</button>
       </div>
-    <div class="meta"> <!--display the moves and time that it takes for the player to finish the game or find all of the pairs --> 
+    <div class="meta">
       <div>Moves: <span class="moves"></span></div>
       <div>Time: <span class="timer"></span></div>
     </div>
     <div class="game">
-      
-      <!-- basically just the characters photos link adress that was used in the game, such as Mickey Mouse, homer, etc. We put the images twice in order to match the cards together in pairs (the very long link is just a picture of Bubbles from Powerpuff Girls) --> 
-      <div class="card" data-tech="mickey"> 
+      <div class="card" data-tech="mickey">
        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj6ZGwzORWD0Qt_g4GU18rABdqb5XcF2U65QBG1JA6zgQDwpNrXwDAlC1lBfQGgzcuEFQ&usqp=CAU" alt="mickey" class="front" />
         <img src="https://i.pinimg.com/1200x/23/17/11/2317117f0343a2ddbe6eefb717b5f7a1.jpg" alt="Memory card" class="back" />
       </div>
@@ -108,7 +106,6 @@
       </div>
 
     </div>
-  </body> 
-    <script src="script.js">
-    </script>
+    <script src="scripts.js"></script>
+  </body>
 </html>
