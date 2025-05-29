@@ -73,3 +73,7 @@
   width: 30%;
   padding: 50px;
 }
+a:hoover{
+      text-decoration: underline;
+      color: #22223B;
+}
