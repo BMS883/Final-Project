@@ -32,7 +32,27 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.difficulty {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.difficulty-btn,
+#resetButton {
+  text-align: center;
+  margin: 10px; /* Adjusted margin for better centering */
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #a06cd5;
+  color: black;
+  cursor: pointer;
+}
 
+#resetButton {
+  display: block; /* Ensure it's a block-level element */
+  margin: 20px auto; /* Center horizontally */
+}
 .card {
   width: calc(25% - 10px);
   height: calc(33.33% - 10px);
