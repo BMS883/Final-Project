@@ -8,7 +8,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #d4c1ec;
+  background-color: #C9ADA7;
   justify-content: center;
   align-items: center;
 }
@@ -44,7 +44,7 @@ body {
   padding: 10px 20px;
   border: 2px solid white;
   border-radius: 5px;
-  background-color: #a06cd5;
+  background-color: #4A4E69;
   color: black;
   cursor: pointer;
 }
