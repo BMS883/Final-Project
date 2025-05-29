@@ -12,7 +12,7 @@
 }
 
 body{/*the main portion of the looks, background*/
-    background-color:linear-gradient(to right, #9A8C98, #d9d9d9);
+    background-image:linear-gradient(to right, #9A8C98, #d9d9d9);
     margin: 0;
     padding: 0;
     width: 100vw;
