@@ -92,3 +92,7 @@ a:hover{
 a:visited{
       color:#4A4E69;
 }
+img {
+  display: block;
+  margin: auto;
+}
