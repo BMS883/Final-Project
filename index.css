@@ -26,6 +26,50 @@
         padding-right: 0.5rem;
         border:  solid black 2px;
         border-radius: 10px;
-        background-color: #f2e9e4;
-        
+        background-color: #f2e9e4; 
       }
+.pOne{    width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 3px solid black;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: #F2E9E4;
+  float: left;
+  width: 30%;
+  padding: 50px;
+}
+.pTwo{
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 3px solid black;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: #F2E9E4;
+  float: right;
+  width: 30%;
+  padding: 50px;
+}
+.pThree{    width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 3px solid black;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: #F2E9E4;
+  float: left;
+  width: 30%;
+  padding: 50px;
+}
+.pFour{    width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 3px solid black;
+  margin: 5px;
+  border-radius: 15px;
+  background-color: #F2E9E4;
+  float: right;
+  width: 30%;
+  padding: 50px;
+}
