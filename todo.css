@@ -1,7 +1,6 @@
-
- body {
+body {
         /*stylig for the whole background*/
-        background-color: #d4a373;
+       background-image: linear-gradient(to right,#F2E9E4, #e6ccb2);
         width: 50%;
         margin: 0 auto;
         font-family: "Indie Flower", cursive;
@@ -11,7 +10,7 @@
         .container {
           /*box atound the list of to dos*/
           width: 360px;
-          background-color: #fcf6bd;
+          background-color: #C9ADA7;
           border: 1px solid black;
         }
 
