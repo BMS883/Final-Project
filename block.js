@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const canvas = document.querySelector("canvas");//stores canvas from HTML in "canvas"
   const ctx = canvas.getContext("2d");//allows you to make 2d shapes in canvas and stores in ctx
   
-  const color = "#264653"//make "color" the color I choose
+  const color = "#22223B"//make "color" the color I choose
   ctx.font = "25px Raleway";//font and size for the beginning nstructions
   ctx.fillStyle = color;//fills shapes with color
   ctx.textAlign= "center";//puts text in center
@@ -115,16 +115,16 @@ function brickColorWithOpacity(row, opacity) {//changes the color of the bricks 
   let color;
   switch (row) {
     case 0://the first row
-      color = "rgba(27, 67, 50, " + opacity + ")"; //set to dark green and has the opacity value
+      color = "rgba(34, 34, 59, " + opacity + ")"; //set to dark green and has the opacity value
       break;
     case 1://the second row
-      color = "rgba(45, 106, 79, " + opacity + ")"; //set to a lighter green and has the opacity value
+      color = "rgba(74, 78, 105, " + opacity + ")"; //set to a lighter green and has the opacity value
       break;
     case 2://the third row
-      color = "rgba(116, 198, 157, " + opacity + ")"; //set to an even lighter shad of green and has an opacity value
+      color = "rgba(154, 140, 152, " + opacity + ")"; //set to an even lighter shad of green and has an opacity value
       break;
     case 3://fourth row
-      color = "rgba(183, 228, 199, " + opacity + ")"; //set to the lightese shade of green and has an opacity value
+      color = "rgba(201, 173, 167, " + opacity + ")"; //set to the lightese shade of green and has an opacity value
       break;
     default://sets the default
       color = "rgba(0, 0, 0, " + opacity + ")"; //black with opacity
