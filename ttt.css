@@ -12,7 +12,7 @@
 }
 
 body{/*the main portion of the looks, background*/
-    background-color: #252A34;
+    background-color:linear-gradient(to right, #9A8C98, #d9d9d9);
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -60,7 +60,7 @@ body{/*the main portion of the looks, background*/
     left: 0;
     width: 85px;
     height: 40px;
-    background-color: #e5383b;
+    background-color: #284b63;
     z-index: -1;
 }
 
@@ -82,11 +82,11 @@ body{/*the main portion of the looks, background*/
 }
 
 .box:hover{/*adds a little somthing something when you hover on the box*/
-    background-color: #e5383b;
+    background-color: #284b63;
 }
 
 #play-again{/*styling for the play again button*/
-    background-color: #e5383b;
+    background-color: #284b63;
     padding: 10px 25px;
     border: none;
     font-size: 1.2rem;
@@ -102,7 +102,7 @@ body{/*the main portion of the looks, background*/
 
 #play-again:hover{/*hover for play again button*/
     padding: 10px 40px;
-    background-color: #08D9D6;
+    background-color: #3c6e71;
     color: #000;
   font-family: "Tektur", sans-serif;
   
@@ -111,7 +111,7 @@ body{/*the main portion of the looks, background*/
 .scoreboard{
   font-size: 1.2rem;
   background-color: grey;
-  background-image: linear-gradient(to right,#e5383b 0%, #08D9D6 100%);
+  background-image: linear-gradient(to right,#284b63 0%, #3c6e71 100%);
   border: 10px;
   border-radius: 20px;
   width: 50%;
