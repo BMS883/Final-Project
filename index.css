@@ -84,6 +84,9 @@
   width: 50%;
   padding: 10px;
 }
+a{
+ color:#4A4E69;
+}
 a:hover{
       text-decoration: underline;
       color: #22223B;
