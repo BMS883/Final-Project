@@ -40,7 +40,7 @@ body {
 .difficulty-btn,
 #resetButton {
   text-align: center;
-  margin: 10px; /* Adjusted margin for better centering */
+  margin: 10px; 
   padding: 10px 20px;
   border: 2px solid white;
   border-radius: 5px;
@@ -50,8 +50,8 @@ body {
 }
 
 #resetButton {
-  display: block; /* Ensure it's a block-level element */
-  margin: 20px auto; /* Center horizontally */
+  display: block;
+  margin: 20px auto;
 }
 .card {
   width: calc(25% - 10px);
